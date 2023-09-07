@@ -1,9 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+
 import HomePage from "./HomePage.jsx";
+import Presentation from "./Presentation.jsx";
 
 function App() {
   return (
     <>
-      <HomePage />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/presentation" element={<Presentation />} />
+      </Routes>
     </>
   );
 }
